@@ -287,6 +287,16 @@ Swipe left on a channel to set it as the default (pre-selected when marking item
 
 Your flips automatically sync across all your devices signed into the same iCloud account. No setup needed.
 
+### Shake to Report a Bug 🐛
+
+Found something wonky? Just shake your phone! YEET uses shake detection to make bug reporting dead simple:
+
+1. **Shake your device** when you encounter an issue
+2. An **in-app feedback form** pops up
+3. Describe what went wrong and hit **Submit**
+
+Your report gets emailed straight to the dev team so they can squash the bug. This works anywhere in the app, so if something looks off or crashes unexpectedly, give it a shake and let us know.
+
 ---
 
 ## 9. Tips and Tricks
