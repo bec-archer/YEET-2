@@ -331,4 +331,4 @@ Pay attention to your average haircut (how much you come down when negotiating).
 
 ---
 
-*Version 1.0 | Built by Bec & Claude | For Nate 🛠️*
+*Version 1.0 | Built by Bec Archer | For Nate 🛠️*
