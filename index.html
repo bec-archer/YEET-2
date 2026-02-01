@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEET Documentation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .pages {
+            display: grid;
+            gap: 1rem;
+        }
+        .page-link {
+            display: block;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .page-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .page-link h2 {
+            color: #667eea;
+            margin-bottom: 0.25rem;
+            font-size: 1.25rem;
+        }
+        .page-link p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YEET</h1>
+        <p class="tagline">Documentation & Resources</p>
+    </header>
+
+    <nav class="pages">
+        <!-- ========================================
+             ADD NEW PAGES HERE
+             Copy a page-link block and update:
+             - href: the filename
+             - h2: the page title
+             - p: short description
+             ======================================== -->
+
+        <a href="YEET_User_Guide.md" class="page-link">
+            <h2>User Guide</h2>
+            <p>Learn how to use YEET - features, tips, and how-tos.</p>
+        </a>
+
+        <a href="YEET_Privacy_Policy.md" class="page-link">
+            <h2>Privacy Policy</h2>
+            <p>How we handle your data and protect your privacy.</p>
+        </a>
+
+        <!-- ADD MORE PAGES ABOVE THIS LINE -->
+    </nav>
+
+    <footer>
+        <p>&copy; 2026 YEET</p>
+    </footer>
+</body>
+</html>
