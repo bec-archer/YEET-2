@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - YEET</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #ffffff;
+            background: #000000;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #2c2c2e;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #ffcc00;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .tagline {
+            color: #8e8e93;
+            font-style: italic;
+            margin-top: 0.25rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #2c2c2e;
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #ffcc00;
+            margin-top: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            color: #e5e5e7;
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            color: #e5e5e7;
+            margin-bottom: 0.5rem;
+        }
+        li strong {
+            color: #ffffff;
+        }
+        a {
+            color: #ffcc00;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            background: #1c1c1e;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #2c2c2e;
+        }
+        th {
+            background: #2c2c2e;
+            color: #ffcc00;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        td {
+            color: #e5e5e7;
+            font-size: 0.95rem;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .tip {
+            background: #1c1c1e;
+            border-left: 3px solid #ffcc00;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .tip strong {
+            color: #ffcc00;
+        }
+        .tip p {
+            margin: 0;
+        }
+        .note {
+            background: #1c1c1e;
+            border-left: 3px solid #8e8e93;
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+            color: #8e8e93;
+        }
+        .note p {
+            margin: 0;
+            color: #8e8e93;
+        }
+        .toc {
+            background: #1c1c1e;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .toc ol {
+            margin: 0;
+            padding-left: 1.25rem;
+        }
+        .toc li {
+            margin-bottom: 0.4rem;
+        }
+        .toc a {
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #2c2c2e;
+            margin: 2rem 0;
+        }
+        .closing {
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 2rem 0;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #2c2c2e;
+            text-align: center;
+            color: #3a3a3c;
+            font-size: 0.85rem;
+        }
+        footer em {
+            display: block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">‹ Back to Docs</a>
+
+        <header>
+            <h1>YEET User Guide</h1>
+            <p class="subtitle">The Flip Tracker for Scrappy Hustlers</p>
+            <p class="tagline">Because sometimes you just gotta send it</p>
+        </header>
+
+        <nav class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#dashboard">The Dashboard</a></li>
+                <li><a href="#managing-flips">Managing Your Flips</a></li>
+                <li><a href="#expenses">Tracking Expenses</a></li>
+                <li><a href="#photos">Taking Photos</a></li>
+                <li><a href="#selling">Listing and Selling</a></li>
+                <li><a href="#history">History and Analytics</a></li>
+                <li><a href="#settings">Settings and Customization</a></li>
+                <li><a href="#tips">Tips and Tricks</a></li>
+            </ol>
+        </nav>
+
+        <main>
+            <!-- SECTION 1 -->
+            <h2 id="getting-started">1. Getting Started</h2>
+
+            <h3>What is YEET?</h3>
+            <p>YEET is an iOS app designed for people who flip things for profit. Whether you're buying and selling trailers, motors, vehicles, or equipment, YEET helps you track every dollar so you know exactly what you have invested and can price things right to actually make money.</p>
+
+            <h3>The Basic Loop</h3>
+            <p>Using YEET is simple:</p>
+            <ol>
+                <li><strong>Add an item</strong> you're flipping</li>
+                <li><strong>Log expenses</strong> as you go (parts, registration, repairs)</li>
+                <li><strong>See your total investment</strong> at a glance</li>
+                <li><strong>Mark it sold</strong> and see your actual profit</li>
+            </ol>
+
+            <h3>Navigation</h3>
+            <p>YEET uses a simple tab bar at the bottom of the screen with four sections:</p>
+            <table>
+                <tr><th>Tab</th><th>What It Does</th></tr>
+                <tr><td><strong>Dashboard</strong></td><td>Your home base. See active flips, total invested, and profit summary at a glance.</td></tr>
+                <tr><td><strong>Flips</strong></td><td>All your active items in one place. Filter, sort, and manage your inventory.</td></tr>
+                <tr><td><strong>History</strong></td><td>Your sold items and profit statistics. The victory lap.</td></tr>
+                <tr><td><strong>Settings</strong></td><td>Customize categories, item types, sale channels, and display preferences.</td></tr>
+            </table>
+
+            <!-- SECTION 2 -->
+            <h2 id="dashboard">2. The Dashboard</h2>
+            <p>The Dashboard is your at-a-glance overview of everything happening with your flips.</p>
+
+            <h3>Summary Cards</h3>
+            <p>At the top of the Dashboard, you'll see two key numbers:</p>
+            <ul>
+                <li><strong>Active Flips:</strong> How many items you're currently working on</li>
+                <li><strong>Invested:</strong> Total money invested across all active items</li>
+            </ul>
+
+            <h3>Active Flips List</h3>
+            <p>Below the summary, you'll see your active items. You can toggle between two views:</p>
+            <ul>
+                <li><strong>List View:</strong> Compact rows showing cover photo, name, item type, total invested, and days owned</li>
+                <li><strong>Gallery View:</strong> Larger photo cards for a more visual overview</li>
+            </ul>
+            <p>Tap the grid/list icon in the header to switch between views. Your preference is saved.</p>
+
+            <h3>Profit Summary</h3>
+            <p>Once you've sold some items, you'll see a Profit Summary section showing your profit this month, all-time profit, and average profit margin. Numbers in <strong style="color:#34c759">green</strong> mean you're making money. <strong style="color:#ff3b30">Red</strong> means... well, you know.</p>
+
+            <!-- SECTION 3 -->
+            <h2 id="managing-flips">3. Managing Your Flips</h2>
+
+            <h3>Adding a New Flip</h3>
+            <p>To add a new item you're flipping:</p>
+            <ol>
+                <li>Tap the <strong>+ button</strong> in the top right corner</li>
+                <li>Fill in the required fields:
+                    <ul>
+                        <li><strong>Name:</strong> What you're calling it (e.g., "Blue 16ft Utility Trailer")</li>
+                        <li><strong>Item Type:</strong> Trailer, Vehicle, Motor, Equipment, or Other</li>
+                        <li><strong>Purchase Price:</strong> What you paid for it</li>
+                    </ul>
+                </li>
+                <li>Optionally add: description, identifier (VIN, serial number), purchase source</li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+
+            <div class="tip">
+                <p><strong>Pro Tip:</strong> The purchase price is automatically logged as your first expense, so you don't need to add it separately.</p>
+            </div>
+
+            <h3>The Item Detail View</h3>
+            <p>Tap any item to see its full details:</p>
+            <ul>
+                <li><strong>Header:</strong> Cover photo, name, item type badge, and status (Active, Listed, or Sold)</li>
+                <li><strong>Stats Bar:</strong> Total Invested (the big number), Days Owned, Photo Count, Expense Count</li>
+                <li><strong>Quick Actions:</strong> Add Expense and Add Photo buttons</li>
+                <li><strong>Photo Gallery:</strong> All photos for this item, filterable by stage</li>
+                <li><strong>Expenses List:</strong> Every expense logged, sorted by date</li>
+                <li><strong>Details Section:</strong> Purchase date, source, notes, and sale info if sold</li>
+            </ul>
+
+            <h3>Quick Actions</h3>
+            <p>From the Items List, you can take quick actions without opening the item:</p>
+            <ul>
+                <li><strong>List View:</strong> Swipe right to quick-mark as Sold, swipe left to Delete</li>
+                <li><strong>Gallery View:</strong> Long press for the same options</li>
+            </ul>
+
+            <!-- SECTION 4 -->
+            <h2 id="expenses">4. Tracking Expenses</h2>
+            <p>Tracking every expense is how you know your true investment. YEET makes it quick and easy.</p>
+
+            <h3>Adding an Expense</h3>
+            <ol>
+                <li>From the Item Detail view, tap <strong>Expense</strong></li>
+                <li>Choose a <strong>Category</strong> (Parts, Paint, Welding, etc.)</li>
+                <li>Enter the <strong>Amount</strong></li>
+                <li>Optionally add: Date, Vendor, Notes, Hours Spent</li>
+                <li>Tap <strong>Add</strong></li>
+            </ol>
+
+            <h3>Receipt Scanning</h3>
+            <p>Got greasy hands? Use the receipt scanner to auto-fill expense details:</p>
+            <ol>
+                <li>Tap <strong>Scan Receipt</strong> at the top of the Add Expense screen</li>
+                <li>Point your camera at the receipt and capture it</li>
+                <li>YEET extracts the total amount, vendor name, and date automatically</li>
+                <li>Review the pre-filled data, correct if needed, and save</li>
+            </ol>
+
+            <div class="note">
+                <p><strong>Note:</strong> OCR works best on clean, printed receipts. Faded thermal receipts or handwritten stuff might need manual entry. The photo still saves either way.</p>
+            </div>
+
+            <h3>Default Categories</h3>
+            <p>YEET comes with these pre-loaded expense categories:</p>
+            <table>
+                <tr><th>Category</th><th>Use For</th></tr>
+                <tr><td>Purchase Price</td><td>Auto-created when you add an item</td></tr>
+                <tr><td>Registration / Title</td><td>DMV fees, title transfer, registration</td></tr>
+                <tr><td>Parts</td><td>Replacement parts, hardware</td></tr>
+                <tr><td>Paint / Body</td><td>Paint, body work, refinishing</td></tr>
+                <tr><td>Electrical</td><td>Wiring, lights, electrical components</td></tr>
+                <tr><td>Tires / Wheels</td><td>New tires, wheels, bearings</td></tr>
+                <tr><td>Welding / Fabrication</td><td>Welding work, custom fabrication</td></tr>
+                <tr><td>Labor</td><td>Paid help, contractor work</td></tr>
+                <tr><td>Tools</td><td>Tools bought for this specific project</td></tr>
+                <tr><td>Misc</td><td>Everything else</td></tr>
+            </table>
+            <p>You can add your own categories in Settings (see <a href="#settings">Chapter 8</a>).</p>
+
+            <!-- SECTION 5 -->
+            <h2 id="photos">5. Taking Photos</h2>
+            <p>Photos document your flip's journey from purchase to sale. They're great for your records and for creating compelling listings.</p>
+
+            <h3>Adding Photos</h3>
+            <ol>
+                <li>From the Item Detail view, tap <strong>Photo</strong></li>
+                <li>Choose <strong>Camera</strong> to take a new photo or <strong>Photo Library</strong> to pick an existing one</li>
+                <li>Add an optional caption</li>
+                <li>Select a <strong>Stage</strong> for the photo</li>
+                <li>Tap <strong>Save</strong></li>
+            </ol>
+
+            <h3>Photo Stages</h3>
+            <p>Organize your photos by stage to track progress:</p>
+            <table>
+                <tr><th>Stage</th><th>Description</th></tr>
+                <tr><td>Incoming</td><td>What it looked like when you bought it</td></tr>
+                <tr><td>In Progress</td><td>During repairs and upgrades</td></tr>
+                <tr><td>Completed</td><td>Finished work, ready to sell</td></tr>
+                <tr><td>Listing</td><td>Glamour shots for your Marketplace listing</td></tr>
+                <tr><td>Receipt</td><td>Proof of purchase for parts and services</td></tr>
+                <tr><td>Other</td><td>Anything that doesn't fit the above</td></tr>
+            </table>
+
+            <h3>Setting a Cover Photo</h3>
+            <p>The cover photo appears in list views and on the item detail header. To set one, tap on any photo to open the full-screen viewer, then long press and select "Set as Cover Photo." The first photo you add becomes the cover by default.</p>
+
+            <!-- SECTION 6 -->
+            <h2 id="selling">6. Listing and Selling</h2>
+
+            <h3>Listing an Item for Sale</h3>
+            <p>When you're ready to sell, you can track your listing:</p>
+            <ol>
+                <li>Open the item and tap the <strong>menu (three dots)</strong> in the top right</li>
+                <li>Select <strong>List for Sale</strong></li>
+                <li>Enter your <strong>asking price</strong></li>
+                <li>Tap <strong>List</strong></li>
+            </ol>
+            <p>The item's status changes to "Listed" and YEET starts tracking how long it sits on the market. You'll see your Total Invested so you know your floor when negotiating.</p>
+
+            <h3>Marking an Item as Sold</h3>
+            <p>When you close the deal:</p>
+            <ol>
+                <li>Open the item and tap the <strong>menu</strong> or use the swipe action</li>
+                <li>Select <strong>Mark as Sold</strong></li>
+                <li>Enter the <strong>sale price</strong> and <strong>sale date</strong></li>
+                <li>Select the <strong>sale channel</strong> (defaults to Facebook Marketplace)</li>
+                <li>Tap <strong>Sold!</strong></li>
+            </ol>
+
+            <h3>The Numbers</h3>
+            <p>As you enter the sale price, YEET calculates in real-time:</p>
+            <ul>
+                <li><strong>Total Invested:</strong> Everything you put into it</li>
+                <li><strong>Profit:</strong> Sale price minus total invested (<span style="color:#34c759">green = good</span>, <span style="color:#ff3b30">red = bad</span>)</li>
+                <li><strong>Margin:</strong> Profit as a percentage of investment</li>
+                <li><strong>Came Down:</strong> If you listed it first, shows how much you negotiated off the asking price</li>
+            </ul>
+
+            <!-- SECTION 7 -->
+            <h2 id="history">7. History and Analytics</h2>
+            <p>The History tab is your victory lap. It shows all your completed flips and overall performance.</p>
+
+            <h3>Stats Overview</h3>
+            <p>At the top, you'll see your lifetime stats:</p>
+            <ul>
+                <li><strong>Sold:</strong> Total items you've flipped</li>
+                <li><strong>Revenue:</strong> Total money from all sales</li>
+                <li><strong>Profit:</strong> Your total net profit</li>
+                <li><strong>Avg Margin:</strong> Average profit margin across all flips</li>
+                <li><strong>Avg Days:</strong> Average time from listing to sale</li>
+                <li><strong>Avg Haircut:</strong> Average negotiation discount (how much you typically come down from asking)</li>
+            </ul>
+
+            <h3>Best Flip</h3>
+            <p>Your highest-profit flip gets a special callout. Brag-worthy material right there.</p>
+
+            <h3>Completed Flips List</h3>
+            <p>Each sold item shows:</p>
+            <ul>
+                <li><strong>Price Journey:</strong> Bought for → Listed for → Sold for</li>
+                <li><strong>Profit:</strong> In green or red</li>
+                <li><strong>Margin %:</strong> Return on investment</li>
+            </ul>
+            <p>Tap any item to see its full detail history, including all expenses and photos.</p>
+
+            <!-- SECTION 8 -->
+            <h2 id="settings">8. Settings and Customization</h2>
+
+            <h3>Display Preferences</h3>
+            <p><strong>Gallery View by Default:</strong> Toggle this on to use gallery view instead of list view on the Dashboard and Items screens.</p>
+
+            <h3>Managing Categories</h3>
+            <p>Go to Settings → Categories to:</p>
+            <ul>
+                <li><strong>Add a new category:</strong> Tap the + button, enter a name, pick an icon</li>
+                <li><strong>Edit a category:</strong> Tap any non-system category to change its name or icon</li>
+                <li><strong>Hide a category:</strong> Swipe left on a category to hide it (it won't appear in pickers)</li>
+                <li><strong>Reorder categories:</strong> Tap Edit and drag to reorder</li>
+            </ul>
+
+            <div class="note">
+                <p><strong>Note:</strong> System categories (like Purchase Price) cannot be edited or deleted.</p>
+            </div>
+
+            <h3>Managing Item Types</h3>
+            <p>Same deal as categories. Default types include Trailer, Vehicle, Motor/Engine, Equipment, and Other. Add your own if you flip something specific like boats or ATVs.</p>
+
+            <h3>Managing Sale Channels</h3>
+            <p>Customize where you sell things. Built-in options:</p>
+            <ul>
+                <li>Facebook Marketplace (default)</li>
+                <li>Craigslist</li>
+                <li>OfferUp</li>
+                <li>Word of Mouth</li>
+                <li>Consignment</li>
+                <li>Other</li>
+            </ul>
+            <p>Swipe left on a channel to set it as the default (pre-selected when marking items sold).</p>
+
+            <h3>iCloud Sync</h3>
+            <p>Your flips automatically sync across all your devices signed into the same iCloud account. No setup needed.</p>
+
+            <h3>Shake to Report a Bug 🐛</h3>
+            <p>Found something wonky? Just shake your phone! YEET uses shake detection to make bug reporting dead simple:</p>
+            <ol>
+                <li><strong>Shake your device</strong> when you encounter an issue</li>
+                <li>An <strong>in-app feedback form</strong> pops up</li>
+                <li>Describe what went wrong and hit <strong>Submit</strong></li>
+            </ol>
+            <p>Your report gets emailed straight to the dev team so they can squash the bug. This works anywhere in the app, so if something looks off or crashes unexpectedly, give it a shake and let us know.</p>
+
+            <!-- SECTION 9 -->
+            <h2 id="tips">9. Tips and Tricks</h2>
+
+            <h3>Know Your Floor</h3>
+            <p>Before you list, check your Total Invested. That's the absolute minimum you can sell for without losing money. Price with margin above this.</p>
+
+            <h3>Track Everything</h3>
+            <p>Even small expenses add up. That $5 can of Rust-Oleum matters when you're calculating profit on a $200 flip.</p>
+
+            <h3>Use Photos</h3>
+            <p>Document the before, during, and after. These photos help you remember what you did, justify your asking price to buyers, and feel good about the transformation.</p>
+
+            <h3>Track Time (If You Care)</h3>
+            <p>The hours tracking on expenses is optional, but it helps you understand if a flip was worth your time. If you made $100 profit but spent 20 hours, that's $5/hour. Knowing this helps you choose better projects.</p>
+
+            <h3>Review Your History</h3>
+            <p>Check your History tab periodically. Look at your average margin and days-to-sell. If your margins are shrinking or items are sitting too long, adjust your buying strategy.</p>
+
+            <h3>The Haircut Metric</h3>
+            <p>Pay attention to your average haircut (how much you come down when negotiating). If you're consistently coming down a lot, either price more aggressively upfront or get better at holding firm.</p>
+
+            <hr>
+
+            <p class="closing">Now get out there and YEET some profits! 🚀</p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 YEET</p>
+            <em>Version 1.0 | Built by Bec Archer | For Nate 🛠️</em>
+        </footer>
+    </div>
+</body>
+</html>
