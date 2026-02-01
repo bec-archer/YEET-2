@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEET Documentation</title>
+    <title>YEET - Documentation</title>
     <style>
         * {
             box-sizing: border-box;
@@ -11,95 +11,141 @@
             padding: 0;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            color: #ffffff;
+            background: #000000;
+            min-height: 100vh;
             padding: 2rem;
-            background: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
         header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding: 2rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 12px;
-            color: white;
+            margin-bottom: 2rem;
         }
-        h1 {
+        .logo {
             font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .logo .rocket {
+            margin-left: 0.25rem;
         }
         .tagline {
-            opacity: 0.9;
-            font-size: 1.1rem;
+            color: #8e8e93;
+            font-size: 1rem;
+            margin-top: 0.25rem;
         }
         .pages {
-            display: grid;
+            display: flex;
+            flex-direction: column;
             gap: 1rem;
         }
         .page-link {
-            display: block;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 1.5rem;
+            background: #1c1c1e;
+            border-radius: 16px;
             text-decoration: none;
-            color: #333;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            color: #ffffff;
+            transition: background 0.2s, transform 0.2s;
         }
         .page-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: #2c2c2e;
+            transform: scale(1.02);
         }
-        .page-link h2 {
-            color: #667eea;
-            margin-bottom: 0.25rem;
+        .page-link:active {
+            transform: scale(0.98);
+        }
+        .page-info h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        .page-info p {
+            color: #8e8e93;
+            font-size: 0.875rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #3a3a3c;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+        }
+        .arrow {
+            color: #ffcc00;
             font-size: 1.25rem;
-        }
-        .page-link p {
-            color: #666;
-            font-size: 0.95rem;
+            font-weight: 300;
         }
         footer {
             margin-top: 3rem;
             text-align: center;
-            color: #888;
-            font-size: 0.9rem;
+            color: #3a3a3c;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Yellow accent for emphasis */
+        .accent {
+            color: #ffcc00;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>YEET</h1>
-        <p class="tagline">Documentation & Resources</p>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">YEET <span class="rocket">🚀</span></div>
+            <p class="tagline">Documentation & Resources</p>
+        </header>
 
-    <nav class="pages">
-        <!-- ========================================
-             ADD NEW PAGES HERE
-             Copy a page-link block and update:
-             - href: the filename
-             - h2: the page title
-             - p: short description
-             ======================================== -->
+        <nav class="pages">
+            <!-- ========================================
+                 ADD NEW PAGES HERE
+                 Copy a page-link block and update:
+                 - href: the filename
+                 - h2: the page title
+                 - p: short description
+                 - tag (optional): category label
+                 ======================================== -->
 
-        <a href="YEET_User_Guide.md" class="page-link">
-            <h2>User Guide</h2>
-            <p>Learn how to use YEET - features, tips, and how-tos.</p>
-        </a>
+            <a href="YEET_User_Guide.md" class="page-link">
+                <div class="page-info">
+                    <h2>User Guide</h2>
+                    <p>Learn how to flip like a pro</p>
+                    <span class="tag">Docs</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
 
-        <a href="YEET_Privacy_Policy.md" class="page-link">
-            <h2>Privacy Policy</h2>
-            <p>How we handle your data and protect your privacy.</p>
-        </a>
+            <a href="YEET_Privacy_Policy.md" class="page-link">
+                <div class="page-info">
+                    <h2>Privacy Policy</h2>
+                    <p>How we handle your data</p>
+                    <span class="tag">Legal</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
 
-        <!-- ADD MORE PAGES ABOVE THIS LINE -->
-    </nav>
+            <!-- ADD MORE PAGES ABOVE THIS LINE -->
+        </nav>
 
-    <footer>
-        <p>&copy; 2026 YEET</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 YEET</p>
+        </footer>
+    </div>
 </body>
 </html>
