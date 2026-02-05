@@ -255,6 +255,8 @@ Tap any item to see its full detail history, including all expenses and photos.
 
 **Gallery View by Default:** Toggle this on to use gallery view instead of list view on the Dashboard and Items screens.
 
+**Light Mode:** YEET is designed for dark mode, so dark mode is the default. If you prefer light mode, toggle this on. The accent color automatically adjusts to a readable gold in light mode.
+
 ### Managing Categories
 
 Go to Settings → Categories to:
