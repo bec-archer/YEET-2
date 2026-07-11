@@ -13,9 +13,11 @@
 4. [Tracking Expenses](#4-tracking-expenses)
 5. [Taking Photos](#5-taking-photos)
 6. [Listing and Selling](#6-listing-and-selling)
-7. [History and Analytics](#7-history-and-analytics)
-8. [Settings and Customization](#8-settings-and-customization)
-9. [Tips and Tricks](#9-tips-and-tricks)
+7. [Trading Items](#7-trading-items)
+8. [History](#8-history)
+9. [Insights](#9-insights)
+10. [Settings and Customization](#10-settings-and-customization)
+11. [Tips and Tricks](#11-tips-and-tricks)
 
 ---
 
@@ -36,13 +38,14 @@ Using YEET is simple:
 
 ### Navigation
 
-YEET uses a simple tab bar at the bottom of the screen with four sections:
+YEET uses a simple tab bar at the bottom of the screen with five sections:
 
 | Tab | What It Does |
 |-----|--------------|
 | **Dashboard** | Your home base. See active flips, total invested, and profit summary at a glance. |
 | **Flips** | All your active items in one place. Filter, sort, and manage your inventory. |
-| **History** | Your sold items and profit statistics. The victory lap. |
+| **History** | Your completed flips and lifetime stats. The victory lap. |
+| **Insights** | Charts and analytics — profit over time, profit by item type, ROI, and inventory value, with 30-day / 90-day / year / all-time views. |
 | **Settings** | Customize categories, item types, sale channels, and display preferences. |
 
 ---
@@ -93,7 +96,7 @@ To add a new item you're flipping:
 
 Tap any item to see its full details:
 
-- **Header:** Cover photo, name, item type badge, and status (Active, Listed, or Sold)
+- **Header:** Cover photo, name, item type badge, and status (Active, Listed, Sold, or Traded)
 - **Stats Bar:** Total Invested (the big number), Days Owned, Photo Count, Expense Count
 - **Quick Actions:** Add Expense and Add Photo buttons
 - **Photo Gallery:** All photos for this item, filterable by stage
@@ -218,7 +221,58 @@ As you enter the sale price, YEET calculates in real-time:
 
 ---
 
-## 7. History and Analytics
+## 7. Trading Items
+
+Sometimes you don't sell for cash — you swap. Two mowers for a trailer, maybe some cash on top, whatever the deal is. YEET tracks trades so your profit still adds up even when no money changes hands.
+
+### Starting a Trade
+
+1. Open the item you're trading away and tap the **menu (three dots)**
+2. Select **Trade It 🔄**
+3. Under **What You're Giving**, the item you opened is already checked. Tap any other active item to throw it into the same deal (trade two things for one — go nuts).
+4. Under **What You're Getting**, name each item you're receiving and pick its type. Tap **Add Another Item** for multi-item trades.
+5. Set the valuation mode (see below), add cash if any, then tap **Trade!**
+
+The stuff you gave away closes out just like a sale, and the stuff you got shows up as fresh active flips — ready to fix up and flip again.
+
+### Cash on Top
+
+Most trades aren't perfectly even. Under **Cash on Top?**, pick one:
+
+- **Even Swap:** No cash changes hands
+- **I Added Cash:** You paid extra on top of your stuff
+- **I Got Cash:** You pocketed cash in the deal
+
+Enter the amount and YEET folds it into the math automatically.
+
+### Two Ways to Value a Trade
+
+This is the important part — the two modes answer different questions:
+
+- **Roll It Forward (carryover):** Everything you had invested in the old stuff rolls into the new stuff. No profit shows right now — it all comes out when you finally sell the new item for cash. Best when you're trading up and just want to keep the chain going.
+- **Assign a Value (market value):** You tell YEET what the new stuff is worth, and it locks in your profit or loss on the old stuff *right now*. The value you assign becomes the new item's starting cost. Best when you want to know how you did on this specific trade.
+
+Not sure? **Roll It Forward** is the honest default — it stops you from counting paper profit before the cash is real.
+
+### The Trade Chain
+
+Traded items remember where they came from. Open one and you'll see a **Trade Chain** card:
+
+- On an item you **received:** "Traded for" — the stuff you gave up to get it
+- On an item you **gave away:** "Became" — what you got in return
+
+When you finally sell a traded-for item for cash, its detail shows **Chain Profit**: your profit across the *entire* chain of trades, not just the last sale. That's the number that tells you whether a whole string of swaps actually made you money.
+
+### Where Trades Show Up
+
+- Items you traded away move to **History** with a purple **TRADED** badge — they're closed, just like sold items
+- Items you received become active flips on your **Dashboard** and **Flips** list, with their starting cost already set
+
+> **Heads up:** Because traded-away items close like sales, they count toward your **Sold** total and **Revenue** in History and Insights — using the trade's value, not cash. An even carryover swap shows $0 profit, and that's correct: the profit is still riding in the new item until you sell it.
+
+---
+
+## 8. History
 
 The History tab is your victory lap. It shows all your completed flips and overall performance.
 
@@ -247,15 +301,64 @@ Each sold item shows:
 
 Tap any item to see its full detail history, including all expenses and photos.
 
+**Traded items** show up here too, marked with a purple **TRADED** badge instead of the sold checkmark. See [Trading Items](#7-trading-items) for how those work.
+
 ---
 
-## 8. Settings and Customization
+## 9. Insights
+
+Where History is your list of wins, **Insights** is the dashboard behind them — charts and stats that show how your flipping is trending, not just what you sold.
+
+### Time Range
+
+At the top, pick a window: **30 Days**, **90 Days**, **Year**, or **All Time**. Every number and chart below updates to match, so you can see how a slow month stacks up against your best.
+
+### Overview
+
+Six cards give you the headline numbers for the selected range:
+
+- **Total Profit:** Net profit across your completed flips
+- **Flips Completed:** How many you closed out
+- **Avg Profit/Flip:** Total profit divided by flips — your typical take
+- **Avg Days to Sell:** How long items take to move
+- **Total Revenue:** All money in from sales (and trade values)
+- **ROI:** Return on investment — profit as a percentage of what you put in
+
+### Profit Over Time
+
+A bar chart of profit by month, so you can spot your hot streaks and dry spells at a glance.
+
+### Profit by Type
+
+A donut chart plus a ranked list of which item types make you the most money — Trailers vs. Motors vs. Vehicles — with the flip count and profit for each. Handy for figuring out what's actually worth your time.
+
+### Performance by Type
+
+A closer look at how each item type performs, so you can double down on your winners.
+
+### Current Inventory
+
+A snapshot of what you're holding right now:
+
+- **Active Flips:** Items still in progress
+- **Invested:** Total cash tied up in them
+
+### Highlights
+
+- **Best Flip 🏆:** Your highest-profit flip in the range — brag material
+- **Biggest Loss 😬:** Your worst flip, shown only when you actually took a loss (so it stays hidden on your good days)
+
+> **Note:** New to YEET with nothing sold yet? Insights shows a friendly empty state until you've closed your first flip.
+
+---
+
+## 10. Settings and Customization
 
 ### Display Preferences
 
 **Gallery View by Default:** Toggle this on to use gallery view instead of list view on the Dashboard and Items screens.
 
-**Light Mode:** YEET is designed for dark mode, so dark mode is the default. If you prefer light mode, toggle this on. The accent color automatically adjusts to a readable gold in light mode.
+**Light Mode:** YEET is designed for dark mode (it looks *chef's kiss* with that Snapchat yellow), so dark mode is the default. If you prefer light mode, toggle this on. The accent color automatically adjusts to a readable gold in light mode.
 
 ### Managing Categories
 
@@ -289,6 +392,10 @@ Swipe left on a channel to set it as the default (pre-selected when marking item
 
 Your flips automatically sync across all your devices signed into the same iCloud account. No setup needed.
 
+### User Guide
+
+Need help? Tap **User Guide** in Settings to open this guide in your browser. You can also access it directly at: [YEET User Guide](https://github.com/bec-archer/YEET/blob/main/YEET_User_Guide.md)
+
 ### Shake to Report a Bug 🐛
 
 Found something wonky? Just shake your phone! YEET uses shake detection to make bug reporting dead simple:
@@ -301,7 +408,7 @@ Your report gets emailed straight to the dev team so they can squash the bug. Th
 
 ---
 
-## 9. Tips and Tricks
+## 11. Tips and Tricks
 
 ### Know Your Floor
 
@@ -333,4 +440,4 @@ Pay attention to your average haircut (how much you come down when negotiating).
 
 ---
 
-*Version 1.0 | Built by Bec Archer | For Nate 🛠️*
+*Version 1.0 | Built by Bec & Claude | For Nate 🛠️*
